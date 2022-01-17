@@ -22,22 +22,28 @@
   </head>
   <body>
     <header>
-      <a href="/" class="logo"><span>Web</span>Studio</a>
-      <nav>
-        <ul class="site-nav list">
-          <li><a href="index.html" class="link">Студия</a></li>
-          <li><a href="portfolio.html" class="link active">Портфолио</a></li>
-          <li><a href="#" class="link">Контакты</a></li>
+      <div class="header-container">
+        <a href="#" class="logo"><span>Web</span>Studio</a>
+        <nav>
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="index.html" class="link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="portfolio.html" class="link active">Портфолио</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contact list">
+          <li class="item">
+            <a href="mailto:info@example.com" class="link">info@example.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact list">
-        <li>
-          <a href="mailto:info@example.com" class="link">info@example.com</a>
-        </li>
-        <li>
-          <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section>
@@ -108,21 +114,27 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="#" class="logo"><span>Web</span>Studio</a>
-      <address>
-        <ul class="footer-contact list">
-          <li>
-            <a href="#" class="adress">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <li>
-            <a href="mailto:info@example.com" class="link">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+    <footer class="footer">
+      <div class="footer-container">
+        <a href="#" class="footer-logo logo"><span>Web</span>Studio</a>
+        <address class="footer-adress">
+          <ul class="footer-contact list">
+            <li>
+              <a href="#" class="adress link"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="link"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

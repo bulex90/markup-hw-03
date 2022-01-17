@@ -21,13 +21,18 @@ h3,
 h4,
 h5,
 h6,
-ul {
+ul,
+p {
   padding: 0px;
   margin: 0px;
 }
 
 .list {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /* Logo */
@@ -54,7 +59,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: solid 1px red;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -68,7 +72,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: solid 1px red;
 }
 
 .header-contact {
@@ -106,8 +109,8 @@ ul {
 .header-contact .link:focus,
 .footer-contact .link:hover,
 .footer-contact .link:focus,
-.footer-contact .adress:focus,
-.footer-contact .adress:hover {
+.footer-contact .adress:focus a,
+.footer-contact .adress:hover a {
   color: var(--accent-color);
 }
 
@@ -175,11 +178,15 @@ ul {
   display: flex;
 }
 
-.team-list-item {
+.team-list-card {
   text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item:not(:last-child) {
+.team-list-card:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -199,15 +206,25 @@ ul {
   text-transform: uppercase;
 }
 
-.team .title,
-.team .description {
+.team-list .title,
+.team-list .description {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team .title {
+.team-list .title {
+  color: var(--title-text-color);
   font-weight: 500;
+}
+
+.team-card-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-list .description {
+  margin-top: 10px;
 }
 
 /* Сlasses */
@@ -261,12 +278,33 @@ ul {
 
 /* Footer */
 
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-contact .link,
 .footer-contact .adress {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-adress {
+  margin-top: 20px;
+}
+
+.footer-container a {
+  color: var(--primary-white-color);
 }
 
 .footer-contact .adress {
