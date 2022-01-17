@@ -55,6 +55,8 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
   border: solid 1px red;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Site navigation */
@@ -62,6 +64,11 @@ ul {
 .header-container {
   display: flex;
   align-items: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border: solid 1px red;
 }
 
 .header-contact {
@@ -71,6 +78,7 @@ ul {
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .site-nav .item {
@@ -111,11 +119,21 @@ ul {
   color: var(--accent-color);
 }
 
+.header-contact .item:first-child {
+  margin-right: 50px;
+}
+
 /* Hero */
 
 .hero {
   background-color: #2f303a;
+  padding: 200px 452px;
+  text-align: center;
 }
+
+.hero-wrpper {
+}
+
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
@@ -126,6 +144,7 @@ ul {
   text-transform: uppercase;
 }
 .hero .button {
+  margin-top: 30px;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -147,6 +166,31 @@ ul {
 
 /* Features & Team */
 
+.section-team {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  margin-top: 50px;
+  display: flex;
+}
+
+.team-list-item {
+  text-align: center;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list-item:not(last-child) {
+  margin-right: 30px;
+}
+
 .features-list .title {
   font-weight: 700;
   font-size: 14px;
@@ -164,6 +208,17 @@ ul {
 }
 .team .title {
   font-weight: 500;
+}
+
+/* Сlasses */
+
+.classes-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.classes-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Button */
