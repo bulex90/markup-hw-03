@@ -238,6 +238,10 @@ p {
   margin-right: 30px;
 }
 
+.classes-container {
+  padding-top: 0px;
+}
+
 /* Button */
 
 .button {
